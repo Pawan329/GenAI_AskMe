@@ -4,6 +4,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
 st.title("Ask me anything")
+OPENAIKEY = st.text_input(label="Enter your API Key he..")
 
 input_text = st.text_input(label="Please enter you text here..")
 
