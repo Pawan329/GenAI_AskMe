@@ -4,9 +4,11 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 
 st.title("Ask me anything")
+
 OPENAIKEY = st.text_input(label="Enter your API Key he..")
 
-input_text = st.text_input(label="Please enter you text here..")
+if OPENAIKEY:
+    input_text = st.text_input(label="Please enter you text here..")
 
 llm = OpenAI(api_key = OPENAIKEY, temperature=0.6)
 
