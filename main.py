@@ -7,7 +7,7 @@ import os
 
 load_dotenv()
 
-OPENAIKEY = st.secrets["API_KEY"]
+OPENAIKEY = os.getenv("API_KEY")
 
 st.title("Ask me anything")
 
