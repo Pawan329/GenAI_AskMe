@@ -21,7 +21,7 @@ output = response.content
 
 # 3. Show Output
 if user_input:
-    st.write(f'User: {user_input}\nSystem: {output}')
+    st.write(f'User: {user_input}')
     st.write(f'System: {output}')
 else:
     st.write('Please enter some text above.')
