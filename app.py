@@ -3,7 +3,7 @@ from langchain_groq import ChatGroq
 from groq import Groq
 from langchain_core.prompts import ChatPromptTemplate
 
-llm = ChatGroq(groq_api_key = "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",
+llm = ChatGroq(groq_api_key = "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",
                model="llama3-70b-8192",
                temperature=0.5)
 
